@@ -4,6 +4,8 @@
 
 Un proyecto de **Chiky & IA**. Web gratuita, sin cuentas, sin anuncios y sin servidores: los datos se quedan en tu dispositivo.
 
+👉 **Úsala ya:** https://javiegomez.github.io/mi-garaje-ia/ — en el móvil, «Instalar aplicación» (Android) o «Añadir a pantalla de inicio» (iPhone).
+
 ---
 
 ## Abrir la app
