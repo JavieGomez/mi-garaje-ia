@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es" data-tema="oscuro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mi Garaje IA · Control de gastos del coche</title>
+  <meta name="description" content="Controla cuánto te cuesta de verdad tu coche: gastos, estadísticas y coste por kilómetro. Gratis, sin cuentas y con tus datos solo en tu dispositivo.">
+  <meta name="theme-color" content="#0A1124">
+  <meta name="color-scheme" content="dark light">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="iconos/icono.svg" type="image/svg+xml">
+  <link rel="icon" href="iconos/icono-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mi Garaje IA">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    // Aplica el tema guardado antes de pintar (evita el parpadeo).
+    try { var p = JSON.parse(localStorage.getItem('miGarajeIA.prefs.v1') || '{}'); if (p.tema === 'claro') document.documentElement.setAttribute('data-tema', 'claro'); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="saltar" href="#vista">Saltar al contenido</a>
+
+  <div id="banner-demo" class="banner-demo" hidden>
+    <span><strong>MODO DEMO</strong> · datos ficticios<span class="banner-extra">, separados de los tuyos</span></span>
+    <button type="button" class="btn-mini" data-accion="salir-demo">Salir de la demo</button>
+  </div>
+
+  <header class="cabecera" id="cabecera" hidden>
+    <a class="marca" href="#inicio" aria-label="Mi Garaje IA, ir al inicio">
+      <img src="iconos/icono.svg" alt="" width="34" height="34">
+      <span class="marca-texto">Mi Garaje <b>IA</b></span>
+    </a>
+    <div class="cabecera-acciones">
+      <button type="button" class="selector-vehiculo" id="btn-vehiculo" data-accion="elegir-vehiculo" aria-haspopup="dialog"></button>
+      <button type="button" class="btn-icono" id="btn-tema" data-accion="tema" aria-label="Cambiar tema claro u oscuro"></button>
+      <a class="btn-icono" href="#ajustes" id="btn-ajustes" aria-label="Ajustes y datos"></a>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav" aria-label="Navegación principal" hidden>
+    <a href="#inicio" data-vista="inicio"><span data-icono="inicio"></span><span>Inicio</span></a>
+    <a href="#movimientos" data-vista="movimientos"><span data-icono="lista"></span><span>Gastos</span></a>
+    <button type="button" class="fab" data-accion="nuevo-gasto" aria-label="Añadir gasto"><span data-icono="mas"></span><span class="fab-texto">Añadir gasto</span></button>
+    <a href="#estadisticas" data-vista="estadisticas"><span data-icono="grafico"></span><span>Estadísticas</span></a>
+    <a href="#garaje" data-vista="garaje"><span data-icono="garaje"></span><span>Garaje</span></a>
+    <a href="#ajustes" data-vista="ajustes" class="solo-escritorio"><span data-icono="ajustes"></span><span>Ajustes</span></a>
+  </nav>
+
+  <main id="vista" class="vista" tabindex="-1">
+    <noscript><p class="aviso-js">Mi Garaje IA necesita JavaScript activado para funcionar.</p></noscript>
+  </main>
+
+  <div id="capa-hoja" class="capa" hidden></div>
+  <div id="capa-dialogo" class="capa capa-dialogo" hidden></div>
+  <div id="avisos" class="avisos" aria-live="polite" aria-atomic="false"></div>
+  <input type="file" id="archivo-importar" accept="application/json,.json" hidden>
+
+  <script src="js/calculos.js"></script>
+  <script src="js/almacen.js"></script>
+  <script src="js/iconos.js"></script>
+  <script src="js/graficos.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

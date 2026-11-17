@@ -1,0 +1,77 @@
+Mi Garaje IA — prueba en navegador real (16/11/2026, 12:47:53)
+URL: http://localhost:8093/MI_GARAJE_IA/
+
+✔ Bienvenida visible en la primera visita
+✔ La bienvenida ofrece datos de demostración
+✔ Ruta de subcarpeta (GitHub Pages): CSS cargado
+✔ Móvil: sin desplazamiento horizontal en «bienvenida» — 390px de contenido en 390px
+✔ Se abre el formulario de vehículo
+✔ Campos vacíos: error en marca
+✔ Campos vacíos: error en modelo
+✔ Campos vacíos: error en kilometraje inicial
+✔ Km inconsistentes: actual menor que el inicial se rechaza
+✔ Se puede crear un vehículo
+✔ Panel vacío invita a añadir el primer gasto
+✔ Importe negativo rechazado
+✔ Importe vacío rechazado
+✔ Importe con texto rechazado
+✔ Fecha vacía rechazada
+✔ Fecha futura rechazada
+✔ Kilometraje incoherente en un gasto rechazado — El 17/10/2026 ya tenías 50.000 km. Una fecha posterior no puede tener menos kilómetros.
+✔ Con errores, el formulario sigue abierto y no guarda
+✔ Se puede añadir un gasto
+✔ Total tras el primer gasto = 45,90 € — 45,90 €
+✔ Suma de importes: 45,90 + 300 = 345,90 € — 345,90 €
+✔ Combustible: litros × precio rellena el importe (45,00)
+✔ Total con tres gastos = 390,90 € — 390,90 €
+✔ Número de movimientos = 3
+✔ Coste por km correcto: 390,90 € / 1.000 km = 0,39 €/km — 0,39 €/km
+✔ Detalle del cálculo muestra gastos, km y resultado — Gastos390,90 €÷Kilómetros1.000 km== Coste por km0,39 €/kmTramo calculado: del 17/10/2026 al 16/11/2026 · 3 gastos · km d
+✔ El detalle aclara que el precio de compra no se suma
+✔ Tecla Escape cierra la hoja
+✔ Editar un gasto actualiza el total (290,90 €) — 290,90 €
+✔ Editar un gasto actualiza el €/km (0,29) — 0,29 €/km
+✔ Eliminar pide confirmación
+✔ Cancelar la confirmación no borra nada
+✔ Eliminar un gasto actualiza el total (245,90 €) — 245,90 €
+✔ Eliminar ofrece «Deshacer»
+✔ Lista de movimientos muestra 2 gastos
+✔ Búsqueda por texto («seguro») → 1 resultado
+✔ Búsqueda por importe («45,90») → 1 resultado
+✔ Filtro por categoría (Gasolina) → 1 resultado
+✔ Orden por importe ascendente (primero 45,90 €) — 45,90 €
+✔ Filtro por fecha sin coincidencias → 0 resultados y mensaje
+✔ Quitar filtros recupera la lista
+✔ Móvil: sin desplazamiento horizontal en «gastos» — 390px de contenido en 390px
+✔ Gráfico circular: un sector por categoría con gasto (2) — Seguro 200,00 € · 81 % | Gasolina 45,90 € · 19 %
+✔ Gráfico circular: importes reales (200,00 € y 45,90 €)
+✔ Gráfico de barras: el mes actual suma 245,90 € — noviembre 2026: 245,90 €
+✔ Gráfico acumulado dibujado con el total
+✔ Móvil: sin desplazamiento horizontal en «estadísticas» — 390px de contenido en 390px
+✔ Los datos permanecen tras recargar — 245,90 €
+✔ Sin km recorridos: no se calcula €/km y se explica — Coste por km—Actualiza el kilometrajeFaltan kilómetros · ver cálculo
+✔ Ningún NaN ni Infinity en pantalla
+✔ Gastos por vehículo separados (Kia: 20,00 €)
+✔ Exportar JSON descarga un archivo
+✔ El JSON exportado contiene 2 vehículos y 3 gastos
+✔ Exportar CSV: cabecera + 3 filas, separador «;»
+✔ Importar un archivo inválido muestra error
+✔ Importación inválida no toca los datos
+✔ Importar JSON de otra app se rechaza con explicación
+✔ Borrar datos (con confirmación) vuelve a la bienvenida
+✔ Tras borrar, el almacenamiento real queda vacío
+✔ Importar la copia restaura los datos
+✔ Tras importar, el Toyota vuelve a sumar 245,90 € — 245,90 €
+✔ Modo demo identificado con un banner
+✔ La demo tiene datos del mes actual
+✔ Móvil: sin desplazamiento horizontal en «inicio (demo)» — 390px de contenido en 390px
+✔ Móvil: sin desplazamiento horizontal en «garaje (demo)» — 390px de contenido en 390px
+✔ Móvil: sin desplazamiento horizontal en «ajustes (demo)» — 390px de contenido en 390px
+✔ Los datos reales no cambian al usar la demo
+✔ Cambio a tema claro
+✔ Salir de la demo devuelve los datos reales
+✔ Service worker registrado (instalable y sin conexión)
+✔ Manifiesto PWA accesible con rutas relativas — Mi Garaje IA · 4 iconos
+✔ Sin errores en la consola
+
+72 de 72 comprobaciones superadas.

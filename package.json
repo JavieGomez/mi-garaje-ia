@@ -1,0 +1,13 @@
+{
+  "name": "mi-garaje-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mi Garaje IA: controla cuánto te cuesta de verdad tu coche. Web estática (HTML + CSS + JS) sin dependencias.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node scripts/servidor.js --abrir",
+    "test": "node --test pruebas/unitarias/",
+    "test:navegador": "node pruebas/navegador/e2e.mjs",
+    "iconos": "node scripts/generar_iconos.mjs"
+  }
+}

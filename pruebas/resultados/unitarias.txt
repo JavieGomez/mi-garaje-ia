@@ -1,0 +1,27 @@
+✔ Formato español de euros, km y fechas (5.7609ms)
+✔ Lectura de números escritos a la española (1.2572ms)
+✔ Ejemplo del enunciado: 1.550 € / 5.000 km = 0,31 €/km (1.0389ms)
+✔ Las sumas son exactas (sin errores de coma flotante) (0.8326ms)
+✔ No divide entre cero ni con una sola lectura (1.8142ms)
+✔ Coste/km mensual usa los mismos días para gastos y km (interpolación) (0.5232ms)
+✔ Los gastos con kilometraje cuentan como lecturas (2.8574ms)
+✔ El precio de compra NO entra en el coste por km (0.9231ms)
+✔ Kilometraje incoherente se detecta (0.5091ms)
+✔ Validación de gastos: negativos, vacíos, fechas inválidas, futuras, km incoherentes (0.9288ms)
+✔ Combustible: litros × precio calcula el importe (0.5182ms)
+✔ Validación de vehículos (1.1893ms)
+✔ Filtros, búsqueda y orden (3.4832ms)
+✔ Resumen del periodo: total, categoría más cara, comparación y media (0.6137ms)
+✔ Series para gráficos (0.4788ms)
+✔ Recordatorios y aceite (0.2136ms)
+✔ Copia de seguridad: ida y vuelta y rechazo de archivos malos (6.2911ms)
+✔ CSV: separador ; coma decimal y sin fórmulas inyectadas (0.5765ms)
+✔ Datos de demostración: realistas, coherentes y con datos del mes actual (4.0456ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 218.1394
